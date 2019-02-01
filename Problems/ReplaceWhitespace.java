@@ -6,15 +6,6 @@ import java.util.streams.*
   (Without using the in-built String.replaceAll() method.)
 */
 
-/*
-  Method using replaceAll()
-  
-  public static String replace(String a, String b) {
-      a = a.replaceAll("\\s+",b);
-      return a;
-  }
-*/
-
 public static String replace(String a, String b) {
       StringBuilder builder = new StringBuilder();
       for(int i = 0; i < a.length(); i++){
@@ -24,3 +15,14 @@ public static String replace(String a, String b) {
       }
       return builder.toString();
 }
+
+// ---------------- BONUS --------------------
+
+/*
+  Method using replaceAll()
+  
+  public static String replace(String a, String b) {
+      a = a.replaceAll("\\s+",b);
+      return a;
+  }
+*/
